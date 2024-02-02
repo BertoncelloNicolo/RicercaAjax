@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricerca</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to bottom, #5afca3 0%, #000000 100%);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            text-align: center;
+            display: block;
+            margin-bottom: 10px;
+            color: #000000;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid rgba(68, 66, 66, 0.91);
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 15px;
+            background-color: #5afca3;
+            color: #000000;
+            transition-duration: 0.3s;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #000000;
+            color: #5afca3;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<form action="">
+    parola:<input type="text" onkeyup="ShowSuggerimenti(this.value)" placeholder="Cerca qualcosa...">
+    <input type="submit" value="Cerca">
+</form>
+
+<ul id="suggerimenti">
+
+</ul>
+
+</body>
+</html>
